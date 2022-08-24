@@ -14,6 +14,7 @@ if(fano.value.length == 0 || fano.value > ano ) {
     img.setAttribute('id', 'foto')
     if(fsex[0].checked){
         genero = 'Homem'
+        
     if (idade >=0 && idade <5) {
         //bebe 
         img.setAttribute('src','homem-bebe.png.png')
@@ -57,10 +58,11 @@ if(fano.value.length == 0 || fano.value > ano ) {
         //idoso
         img.setAttribute('src','mulher-idoso.png.png')
     }
-    }
+    } 
     res.style.textAlign = 'center'
     res.innerHTML = `Detectamos ${genero} com ${idade} anos`
     res.appendChild(img)
+    
     
 }
 }
